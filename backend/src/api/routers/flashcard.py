@@ -26,7 +26,7 @@ def get_flashcard_service() -> FlashcardService:
     if flashcard_service is None:
         # Initialize with proper session service like other agents
         session_service = InMemorySessionService()
-        flashcard_service = FlashcardService("nexora", session_service)
+        flashcard_service = FlashcardService("learnweave", session_service)
     return flashcard_service
 
 

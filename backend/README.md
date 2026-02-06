@@ -1,12 +1,6 @@
-# Nexora AI - Backend
+# LearnWeave - Backend
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/M4RKUS28/Nexora/blob/main/frontend/public/logo_white.png?raw=true">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/M4RKUS28/Nexora/blob/main/doc/logo_black.png?raw=true">
-  <img alt="Nexora AI Logo" src="https://github.com/M4RKUS28/Nexora/blob/main/frontend/public/logo_white.png?raw=true">
-</picture>
-
-Welcome to the backend of **Nexora AI**! This powerful server-side application is built with Python and FastAPI, providing the core business logic, AI-powered services, and the main API for the Nexora platform.
+Welcome to the backend of **LearnWeave**! This powerful server-side application is built with Python and FastAPI, providing the core business logic, AI-powered services, and the main API for the LearnWeave platform.
 
 ---
 

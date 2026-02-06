@@ -85,15 +85,6 @@ function Impressum() {
                 <Text size="lg" weight={700}>{t('projectPhase.info')}</Text>
                 <Text>{t('projectPhase.contact')}</Text>
               </Paper>
-
-              <Paper withBorder p="md" radius="md" className={classes.section}>
-                <Group spacing="md" mb="xs">
-                  <IconCertificate size={24} color={theme.colors.blue[5]} />
-                  <Title order={3}>{t('hackathonInfo.title')}</Title>
-                </Group>
-                <Divider mb="md" />
-                <Text>{t('hackathonInfo.text')}</Text>
-              </Paper>
               
               <Paper withBorder p="md" radius="md" className={classes.section}>
                 <Group spacing="md" mb="xs">

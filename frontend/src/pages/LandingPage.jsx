@@ -490,7 +490,6 @@ function LandingPage() {
         </Container>
       </Box>
       
-      {/* Award Section */}
       {/* How It Works Section */}
       <Box id="how-it-works" className={classes.section}>
         <Container>

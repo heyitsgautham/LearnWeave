@@ -36,7 +36,6 @@ function LanguageSettingsCard({ className }) {
 
   const languageData = [
     { value: 'en', label: t('english', { ns: 'language' }), countryCode: 'US' },
-    { value: 'de', label: t('german', { ns: 'language' }), countryCode: 'DE' },
   ];
 
   return (

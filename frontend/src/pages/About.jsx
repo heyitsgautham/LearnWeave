@@ -4,17 +4,14 @@ import {
   Text, 
   Grid, 
   Image, 
-  Timeline, 
   Card, 
   Badge, 
   Group, 
-  Avatar, 
   Button, 
   Stack,
   ThemeIcon,
   Transition,
   createStyles,
-  ActionIcon,
 } from '@mantine/core';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -26,11 +23,7 @@ import {
   IconUserCheck, 
   IconWorld, 
   IconBrain, 
-  IconDeviceLaptop, 
-  IconChartBar, 
-  IconHeart ,
-  IconBrandLinkedin,
-  IconBrandGithub
+  IconDeviceLaptop,
 } from '@tabler/icons-react';
 
 const useStyles = createStyles((theme) => ({
@@ -102,47 +95,6 @@ function About() {
   useEffect(() => {
     setVisible(true);
   }, []);
-
-  const teamMembers = [
-    {
-      name: 'Markus Huber',
-      role: t('team.members.markusHuber.role'),
-      bio: t('team.members.markusHuber.bio'),
-      avatar: 'https://d112y698adiu2z.cloudfront.net/photos/production/user_photos/003/508/125/datas/profile.jpg',
-      linkedin: 'https://www.linkedin.com/in/markus-huber-0132282bb/',
-      github: 'https://github.com/M4RKUS28'
-    },
-    {
-      name: 'Luca Bozzetti',
-      role: t('team.members.lucaBozzetti.role'),
-      bio: t('team.members.lucaBozzetti.bio'),
-      avatar: 'https://poker-spade.de/static/media/Luca.658c06336387cd26c193.jpeg',
-      linkedin: 'https://www.linkedin.com/in/luca-bozzetti-371379282/',
-      github: 'https://github.com/lucabzt'
-    },
-    {
-      name: 'Sebastian Rogg',
-      role: t('team.members.sebastianRogg.role'),
-      bio: t('team.members.sebastianRogg.bio'),
-      avatar: 'https://avatars.githubusercontent.com/u/144535689?v=4',
-      linkedin: 'https://www.linkedin.com/in/sebastian-rogg/',
-    },
-    {
-      name: 'Matthias Meierlohr',
-      role: t('team.members.matthiasMeierlohr.role'),
-      bio: t('team.members.matthiasMeierlohr.bio'),
-      avatar: 'TODO',
-      linkedin: 'https://www.linkedin.com/in/matthias-meierlohr',
-      github: 'https://github.com/Maths24'
-    },
-    {
-      name: 'Jonas Hörter',
-      role: t('team.members.jonasHoerter.role'),
-      bio: t('team.members.jonasHoerter.bio'),
-      avatar: 'https://poker-spade.de/static/media/Jonas.2327447cc8a67b962465.jpeg',
-      linkedin: 'https://www.linkedin.com/in/jonas-hörter-4b22562bb/',
-    },
-  ];
 
   return (
     <Container size="xl" className={classes.wrapper}>
@@ -259,58 +211,6 @@ function About() {
                 </Grid.Col>
               </Grid>
             </Card>
-
-            {/* Our Story */}
-
-            <Grid gutter={50} mx="xl" my="xl">
-
-
-                <Grid>
-                  {teamMembers.map((member, index) => (
-                    <Grid.Col md={6} key={index}>
-                      <Card shadow="sm" p="lg" radius="md" withBorder className={classes.card}>
-                        <Card.Section sx={{ display: 'flex', justifyContent: 'center', padding: '20px 0 0 0' }}>
-                          <Avatar src={member.avatar} size={80} radius="xl" />
-                        </Card.Section>
-
-                        <Stack spacing={5} mt="md" align="center">
-                        <Text weight={700}>{member.name}</Text>
-                        <Badge color="teal" variant="light">{member.role}</Badge>
-                        <Group spacing={5}>
-                          <ActionIcon
-                            component="a"
-                            href={member.linkedin}
-                            target="_blank"
-
-                            size="sm"
-                            color="blue"
-                          >
-                            <IconBrandLinkedin size={18} />
-                          </ActionIcon>
-                          <ActionIcon
-                            component="a"
-                            href={member.github}
-                            target="_blank"
-
-                            size="sm"
-                            color="blue"
-                          >
-                            <IconBrandGithub size={18} />
-                          </ActionIcon>
-                        </Group>
-                      </Stack>
-
-                        <Text size="sm" color="dimmed" mt="sm" align="center">
-                          {member.bio}
-                        </Text>
-                      </Card>
-                    </Grid.Col>
-                  ))}
-
-
-                </Grid>
-
-            </Grid>
 
             {/* Contact CTA */}
             <Card

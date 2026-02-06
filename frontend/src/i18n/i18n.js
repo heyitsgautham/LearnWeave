@@ -29,31 +29,6 @@ import enPrivacy from './locales/en/privacy.json';
 import enToolbarContainer from './locales/en/toolbarContainer.json';
 import enStatisticsPage from './locales/en/statisticsPage.json';
 
-// German translations
-import deCommon from './locales/de/common.json';
-import deLanguage from './locales/de/language.json';
-import deNavigation from './locales/de/navigation.json';
-import deLandingPage from './locales/de/landingPage.json';
-import deChapterView from './locales/de/chapterView.json';
-import deAdminView from './locales/de/adminView.json';
-import deAbout from './locales/de/about.json';
-import deDashboard from './locales/de/dashboard.json';
-import deAuth from './locales/de/auth.json';
-import deSettings from './locales/de/settings.json';
-import deApp from './locales/de/app.json';
-import deAdmin from './locales/de/admin.json';
-import deFooter from './locales/de/footer.json';
-import deChatTool from './locales/de/chatTool.json';
-import deGeoGebraPlotter from './locales/de/geoGebraPlotter.json';
-import deNotesTool from './locales/de/notesTool.json';
-import deCourseView from './locales/de/courseView.json';
-import deCreateCourse from './locales/de/createCourse.json';
-import dePricing from './locales/de/pricing.json';
-import deImpressum from './locales/de/impressum.json';
-import dePrivacy from './locales/de/privacy.json';
-import deToolbarContainer from './locales/de/toolbarContainer.json';
-import deStatisticsPage from './locales/de/statisticsPage.json';
-
 // Configure i18n with default namespace
 const i18nInstance = i18n.createInstance();
 
@@ -99,32 +74,6 @@ i18nInstance
         privacy: enPrivacy,
         toolbarContainer: enToolbarContainer,
         statisticsPage: enStatisticsPage,
-      },
-      de: {
-        // Common translations
-        common: deCommon,
-        language: deLanguage,
-        navigation: deNavigation,
-        landingPage: deLandingPage,
-        chapterView: deChapterView,
-        adminView: deAdminView,
-        about: deAbout,
-        dashboard: deDashboard,
-        auth: deAuth,
-        settings: deSettings,
-        app: deApp,
-        admin: deAdmin,
-        footer: deFooter,
-        chatTool: deChatTool,
-        geoGebraPlotter: deGeoGebraPlotter,
-        notesTool: deNotesTool,
-        courseView: deCourseView,
-        createCourse: deCreateCourse,
-        pricing: dePricing,
-        impressum: deImpressum,
-        privacy: dePrivacy,
-        toolbarContainer: deToolbarContainer,
-        statisticsPage: deStatisticsPage,
       },
     },
     fallbackLng: 'en',

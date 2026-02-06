@@ -1,8 +1,8 @@
-# Nexora AI - Quick Test Script
+# LearnWeave - Quick Test Script
 # Run this to verify everything is working before deployment
 
 Write-Host "================================" -ForegroundColor Cyan
-Write-Host "  Nexora AI - Pre-Deployment Test" -ForegroundColor Cyan
+Write-Host "  LearnWeave - Pre-Deployment Test" -ForegroundColor Cyan
 Write-Host "================================" -ForegroundColor Cyan
 Write-Host ""
 
@@ -71,7 +71,7 @@ Start-Sleep -Seconds 10
 # Check containers
 Write-Host "`n[7/8] Checking container status..." -ForegroundColor Yellow
 $containers = docker ps --format "{{.Names}}"
-$expectedContainers = @("nexora", "nexora-mysql", "nexora-chromadb")
+$expectedContainers = @("learnweave", "learnweave-mysql", "learnweave-chromadb")
 foreach ($container in $expectedContainers) {
     if ($containers -contains $container) {
         Write-Host "✓ $container is running" -ForegroundColor Green
@@ -119,7 +119,7 @@ if ($ErrorCount -eq 0) {
     Write-Host "  • MySQL:    localhost:3306" -ForegroundColor Cyan
     Write-Host "`nNext steps:" -ForegroundColor Yellow
     Write-Host "  1. Test the API in browser: http://localhost:8127/docs" -ForegroundColor White
-    Write-Host "  2. Create admin user: docker exec -it nexora python create_admin.py" -ForegroundColor White
+    Write-Host "  2. Create admin user: docker exec -it learnweave python create_admin.py" -ForegroundColor White
     Write-Host "  3. Start frontend: cd frontend; npm run dev" -ForegroundColor White
     Write-Host "  4. Review PRODUCTION_DEPLOYMENT.md for tomorrow's deployment" -ForegroundColor White
 } else {

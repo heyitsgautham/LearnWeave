@@ -3,11 +3,7 @@
   "projectPhase": {
     "title": "Project Status",
     "info": "This project is currently in the development phase. All information is subject to change.",
-    "contact": "For inquiries, contact: nexora-ai+markus@obermui.de"
-  },
-  "hackathonInfo": {
-    "title": "Hackathon Project",
-    "text": "This project was developed as part of a hackathon on devpost.com. It is a prototype implementation created during the competition."
+    "contact": "For inquiries, contact: contact@learnweave.com"
   },
   "legalInfo": {
     "title": "Legal Information",
@@ -17,7 +13,7 @@
   },
   "creativeInfo": {
     "title": "A Note from the Team",
-    "text": "Nexora is being built with passion, coffee, and a vision to make learning smarter and more fun. Stay tuned for exciting updates!"
+    "text": "LearnWeave is being built with passion, coffee, and a vision to make learning smarter and more fun. Stay tuned for exciting updates!"
   },
   "lastUpdated": "This imprint page was last updated: August 2025"
 }

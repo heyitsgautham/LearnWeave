@@ -6,8 +6,7 @@
       "label": "Course Language",
       "placeholder": "Select course language",
       "options": {
-        "english": "English",
-        "german": "German"
+        "english": "English"
       }
     },
     "difficulty": {
@@ -90,7 +89,7 @@
     "upgradeToPremium": "Upgrade to Premium"
   },
   "premiumModal": {
-    "title": "Nexora Pro - Unlock More Possibilities",
+    "title": "LearnWeave Pro - Unlock More Possibilities",
     "subtitle": "Get unlimited access to all premium features and create as many courses as you want!",
     "limitReachedTitle": "Limit Reached!",
     "limitReachedMessage": "You've reached your free course limit. Upgrade to Premium to create unlimited courses.",

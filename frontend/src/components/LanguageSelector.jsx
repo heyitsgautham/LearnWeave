@@ -14,7 +14,6 @@ function LanguageSelector() {
       onChange={changeLanguage}
       data={[
         { value: 'en', label: t('english') },
-        { value: 'de', label: t('german') },
       ]}
       size="xs"
       w={100}

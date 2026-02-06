@@ -45,7 +45,7 @@ class ChatService:
             pool_size=settings.DB_POOL_SIZE,
             max_overflow=settings.DB_MAX_OVERFLOW
         )
-        self.chat_agent = ChatAgent("Nexora", self.session_service)
+        self.chat_agent = ChatAgent("LearnWeave", self.session_service)
 
    
     async def process_chat_message(

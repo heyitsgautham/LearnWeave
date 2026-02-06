@@ -1,4 +1,4 @@
-# Nexora AI - Quick Start Script
+# LearnWeave - Quick Start Script
 # Run this after you've completed the setup
 
 param(
@@ -133,7 +133,7 @@ function Start-All {
 
 # Main execution
 if (-not (Test-Path "backend") -or -not (Test-Path "frontend")) {
-    Write-Host "ERROR: Please run this script from the Nexora root directory!" -ForegroundColor Red
+    Write-Host "ERROR: Please run this script from the LearnWeave root directory!" -ForegroundColor Red
     exit 1
 }
 
@@ -146,7 +146,7 @@ if ($All) {
 } elseif ($ChromaDB) {
     Start-ChromaDB
 } else {
-    Write-Header "Nexora AI - Quick Start"
+    Write-Header "LearnWeave - Quick Start"
     Write-Host ""
     Write-Host "Usage:" -ForegroundColor Yellow
     Write-Host "  .\start.ps1 -All          Start all services" -ForegroundColor White

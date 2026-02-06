@@ -8,12 +8,12 @@ services:
   # Then update .env: DB_HOST=mysql
   
   # mysql:
-  #   container_name: nexora-mysql
+  #   container_name: learnweave-mysql
   #   image: mysql:8.0
   #   environment:
   #     MYSQL_ROOT_PASSWORD: root_password_change_me
-  #     MYSQL_DATABASE: nexora_db
-  #     MYSQL_USER: nexora_user
+  #     MYSQL_DATABASE: learnweave_db
+  #     MYSQL_USER: learnweave_user
   #     MYSQL_PASSWORD: your_secure_password  # Match this with .env DB_PASSWORD
   #   ports:
   #     - "3306:3306"
@@ -29,8 +29,8 @@ services:
   # Backend Application
   # ============================================
   app:
-    container_name: nexora
-    #image: m4rkus28/nexora:latest
+    container_name: learnweave
+    #image: learnweave:latest
     build:
       context: .
       dockerfile: Dockerfile
@@ -57,7 +57,7 @@ services:
   # ChromaDB Vector Database
   # ============================================
   chromadb:
-    container_name: nexora-chromadb
+    container_name: learnweave-chromadb
     image: chromadb/chroma:latest
     environment:
       - CHROMA_SERVER_HOST=0.0.0.0

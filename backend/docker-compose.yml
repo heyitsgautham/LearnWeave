@@ -3,12 +3,12 @@ services:
   # MySQL Database
   # ============================================
   mysql:
-    container_name: nexora-mysql
+    container_name: learnweave-mysql
     image: mysql:8.0
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root_secure_password}
-      MYSQL_DATABASE: ${DB_NAME:-nexora_db}
-      MYSQL_USER: ${DB_USER:-nexora_user}
+      MYSQL_DATABASE: ${DB_NAME:-learnweave_db}
+      MYSQL_USER: ${DB_USER:-learnweave_user}
       MYSQL_PASSWORD: ${DB_PASSWORD:-your_secure_password}
     ports:
       - "3306:3306"
@@ -21,14 +21,14 @@ services:
       retries: 10
       interval: 10s
     networks:
-      - nexora-network
+      - learnweave-network
 
   # ============================================
   # Backend Application
   # ============================================
   app:
-    container_name: nexora
-    #image: m4rkus28/nexora:latest
+    container_name: learnweave
+    #image: learnweave:latest
     build:
       context: .
       dockerfile: Dockerfile
@@ -54,13 +54,13 @@ services:
     labels:
       - "com.centurylinklabs.watchtower.enable=true"
     networks:
-      - nexora-network
+      - learnweave-network
 
   # ============================================
   # ChromaDB Vector Database
   # ============================================
   chromadb:
-    container_name: nexora-chromadb
+    container_name: learnweave-chromadb
     image: chromadb/chroma:latest
     environment:
       - CHROMA_SERVER_HOST=0.0.0.0
@@ -74,7 +74,7 @@ services:
       - "8001:8000"
     restart: always
     networks:
-      - nexora-network
+      - learnweave-network
 
 volumes:
   mysql-data:
@@ -83,5 +83,5 @@ volumes:
     driver: local
 
 networks:
-  nexora-network:
+  learnweave-network:
     driver: bridge

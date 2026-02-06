@@ -1,14 +1,14 @@
-# Nexora AI - Quick Setup Script for Windows
+# LearnWeave - Quick Setup Script for Windows
 # Run this script in PowerShell to automate initial setup
 
 Write-Host "================================" -ForegroundColor Cyan
-Write-Host "  Nexora AI - Setup Script" -ForegroundColor Cyan
+Write-Host "  LearnWeave - Setup Script" -ForegroundColor Cyan
 Write-Host "================================" -ForegroundColor Cyan
 Write-Host ""
 
 # Check if we're in the right directory
 if (-not (Test-Path "backend") -or -not (Test-Path "frontend")) {
-    Write-Host "ERROR: Please run this script from the Nexora root directory!" -ForegroundColor Red
+    Write-Host "ERROR: Please run this script from the LearnWeave root directory!" -ForegroundColor Red
     exit 1
 }
 
@@ -138,9 +138,9 @@ Write-Host "   - (Optional) Add Unsplash API keys" -ForegroundColor Cyan
 Write-Host ""
 Write-Host "2. Set up MySQL database:" -ForegroundColor White
 Write-Host "   mysql -u root -p" -ForegroundColor Cyan
-Write-Host "   CREATE DATABASE nexora_db;" -ForegroundColor Cyan
-Write-Host "   CREATE USER 'nexora_user'@'localhost' IDENTIFIED BY 'password';" -ForegroundColor Cyan
-Write-Host "   GRANT ALL PRIVILEGES ON nexora_db.* TO 'nexora_user'@'localhost';" -ForegroundColor Cyan
+Write-Host "   CREATE DATABASE learnweave_db;" -ForegroundColor Cyan
+Write-Host "   CREATE USER 'learnweave_user'@'localhost' IDENTIFIED BY 'password';" -ForegroundColor Cyan
+Write-Host "   GRANT ALL PRIVILEGES ON learnweave_db.* TO 'learnweave_user'@'localhost';" -ForegroundColor Cyan
 Write-Host ""
 Write-Host "3. Get Google Cloud credentials:" -ForegroundColor White
 Write-Host "   - Go to: https://console.cloud.google.com/" -ForegroundColor Cyan
@@ -156,6 +156,4 @@ Write-Host "   Backend:  cd backend; .\venv\Scripts\activate; uvicorn src.main:a
 Write-Host "   Frontend: cd frontend; npm run dev" -ForegroundColor Cyan
 Write-Host ""
 Write-Host "For detailed instructions, see: LOCALHOST_SETUP.md" -ForegroundColor Yellow
-Write-Host ""
-Write-Host "Need help? Check: https://github.com/M4RKUS28/Nexora/issues" -ForegroundColor Cyan
 Write-Host ""

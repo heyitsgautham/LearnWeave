@@ -143,7 +143,6 @@ function CreateCourse() {
 
   const languageOptions = [
     { value: 'en', label: t('form.language.options.english') || 'English', countryCode: 'US' },
-    { value: 'de', label: t('form.language.options.german') || 'Deutsch', countryCode: 'DE' }
   ];
 
   const handleDocumentUpload = async (file) => {

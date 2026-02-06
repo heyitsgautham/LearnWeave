@@ -1,26 +1,8 @@
-# Nexora AI
+# LearnWeave
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/M4RKUS28/Nexora/blob/main/frontend/public/logo_white.png?raw=true">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/M4RKUS28/Nexora/blob/main/frontend/public/logo_black.png?raw=true">
-  <img alt="Nexora AI Logo" src="https://github.com/M4RKUS28/Nexora/blob/main/frontend/public/logo_white.png?raw=true">
-</picture>
-
-#### Welcome to **Nexora AI**!
+#### Welcome to **LearnWeave**!
 
 This project is a full-stack application designed to deliver cutting-edge **AI solutions for personalized learning assistance**. It leverages a powerful Python backend and a modern React frontend to offer an innovative educational platform.
-
-**🌐 Try it live:** [nexora-ai.de](https://nexora-ai.de)
-
-
----
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset=https://github.com/M4RKUS28/Nexora/blob/main/doc/dashboard_dark.png?raw=true">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/M4RKUS28/Nexora/blob/main/doc/dashboard_white.png?raw=true">
-  <img alt="Nexora AI Logo" src="https://github.com/M4RKUS28/Nexora/blob/main/doc/logo.png?raw=true">
-</picture>
-
 
 ---
 
@@ -74,19 +56,15 @@ This project is a full-stack application designed to deliver cutting-edge **AI s
 
 ## Course Creation process
 
-![Course Creation Process](https://github.com/M4RKUS28/Nexora/blob/main/doc/final_diagram.png?raw=true)
-
 
 
 ## 📐 Software Architecture
-
-![Software Architecture](https://github.com/M4RKUS28/Nexora/blob/main/doc/Editor%20_%20Mermaid%20Chart-2025-06-18-210221.png?raw=true)
 
 ---
 
 ## 🧪 Development Installation & Setup
 
-To run the project locally, follow the instructions in our [🛠️ Wiki - How to Run Locally](https://github.com/M4RKUS28/Nexora/wiki/How-to-run-locally)
+To run the project locally, follow the instructions in `LOCALHOST_SETUP.md`
 
 > Make sure you have Docker, Node.js, and Python 3.12+ installed.
 
@@ -95,7 +73,7 @@ To run the project locally, follow the instructions in our [🛠️ Wiki - How t
 ## 📁 Project Structure
 
 ```bash
-nexora-project/
+learnweave-project/
 ├── backend/
 │   ├── src/                  # Main backend source code
 │   ├── venv/                 # Python virtual environment (ignored by git)
@@ -141,8 +119,8 @@ nexora-project/
 ## 📞 Contact
 
 Have questions or feedback?  
-Feel free to [open an issue](https://github.com/M4RKUS28/Nexora/issues) or contact the maintainer directly via GitHub.
+Feel free to open an issue or contact the maintainer.
 
 ---
 
-> Made with 💡 and 🧠 by the Nexora AI Team.
+> Made with 💡 and 🧠 by the LearnWeave Team.

@@ -1,4 +1,4 @@
-# Nexora AI - Docker Deployment Script
+# LearnWeave - Docker Deployment Script
 # Quick script to build and deploy with Docker
 
 param(
@@ -153,7 +153,7 @@ function Show-Status {
 
 # Main execution
 if (-not (Test-Path "backend")) {
-    Write-Host "ERROR: Please run this script from the Nexora root directory!" -ForegroundColor Red
+    Write-Host "ERROR: Please run this script from the LearnWeave root directory!" -ForegroundColor Red
     exit 1
 }
 
@@ -177,7 +177,7 @@ if ($Build) {
 } elseif ($Status) {
     Show-Status
 } else {
-    Write-Header "Nexora AI - Docker Deployment"
+    Write-Header "LearnWeave - Docker Deployment"
     Write-Host ""
     Write-Host "Usage:" -ForegroundColor Yellow
     Write-Host "  .\deploy-docker.ps1 -Build      Build Docker images" -ForegroundColor White

@@ -1,10 +1,10 @@
 # ============================================
-# Nexora AI - Quick Start Script
+# LearnWeave - Quick Start Script
 # Test locally before Cloud Run deployment
 # ============================================
 
 Write-Host "================================" -ForegroundColor Cyan
-Write-Host "  Nexora AI - Local Test Setup" -ForegroundColor Cyan
+Write-Host "  LearnWeave - Local Test Setup" -ForegroundColor Cyan
 Write-Host "================================" -ForegroundColor Cyan
 Write-Host ""
 

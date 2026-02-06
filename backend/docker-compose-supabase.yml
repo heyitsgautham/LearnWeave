@@ -1,5 +1,5 @@
 # ============================================
-# Nexora AI - Local Testing with Supabase
+# LearnWeave - Local Testing with Supabase
 # ============================================
 # This setup uses:
 # - Supabase for PostgreSQL database (cloud)
@@ -12,7 +12,7 @@ services:
   # Backend Application
   # ============================================
   app:
-    container_name: nexora
+    container_name: learnweave
     build:
       context: ..
       dockerfile: Dockerfile.cloudrun
@@ -30,7 +30,7 @@ services:
       - ./.env
     restart: always
     networks:
-      - nexora-network
+      - learnweave-network
     depends_on:
       - chromadb
 
@@ -38,7 +38,7 @@ services:
   # ChromaDB Vector Database (Local)
   # ============================================
   chromadb:
-    container_name: nexora-chromadb
+    container_name: learnweave-chromadb
     image: chromadb/chroma:latest
     environment:
       - CHROMA_SERVER_HOST=0.0.0.0
@@ -52,12 +52,12 @@ services:
       - "8001:8000"
     restart: always
     networks:
-      - nexora-network
+      - learnweave-network
 
 volumes:
   chroma-data:
     driver: local
 
 networks:
-  nexora-network:
+  learnweave-network:
     driver: bridge
