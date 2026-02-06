@@ -235,3 +235,4 @@ backend/flashcard_images
 backend/anki_output
 backend/flashcard_uploads
 backend/google-credentials.json
+google-credentials.json
